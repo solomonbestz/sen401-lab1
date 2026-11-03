@@ -1,0 +1,9 @@
+fd85e2d - solomonbestz (2026-11-03): Merge branch 'dev'
+9c717dc - solomonbestz (2026-11-03): feat(lab3): implement inventory tracking and stock valuation
+0d0e3e2 - solomonbestz (2026-11-03): maint(corrective): resolve division by zero error for empty lists
+c5b42dd - solomonbestz (2026-11-03): Initial commit: Add baseline v1.0 starter code*   fd85e2d Merge branch 'dev'
+|\  
+| * 9c717dc feat(lab3): implement inventory tracking and stock valuation
+* | 0d0e3e2 maint(corrective): resolve division by zero error for empty lists
+|/  
+* c5b42dd Initial commit: Add baseline v1.0 starter code

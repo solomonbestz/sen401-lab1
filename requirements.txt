@@ -3,3 +3,7 @@
 
 # Lab 2 Dependencies
 pydantic>=2.0.0
+
+# Lab 4
+fastapi>=0.110.0
+uvicorn>=0.28.0

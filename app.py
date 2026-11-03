@@ -1,21 +1,26 @@
 """
-Main Application Entry Point
-Demonstrates baseline execution.
+Inventory Calculation App
 """
-from students import students
-from utils.helpers import get_highest_score, get_lowest_score
+from inventory import inventory_data
+from utils.helpers import highest_stock_item, lowest_stock_item
+
+def calculate_total_value(items) -> float:
+    if not items:
+        return 0.0
+    return sum(item["quantity"] * item["price"] for item in items)
 
 def main():
-    print("--- SEN 401 Baseline Application v1.0 ---")
-    print(f"Total Students Registered: {len(students)}")
+    print("--- CSA INVENTORY AUDIT ---")
+    total_val = calculate_total_value(inventory_data)
+    print(f"Total Stock Valuation: NGN {total_val:,.2f}")
     
-    highest = get_highest_score(students)
-    lowest = get_lowest_score(students)
+    highest = highest_stock_item(inventory_data)
+    lowest = lowest_stock_item(inventory_data)
     
     if highest:
-        print(f"Highest Scorer: {highest['name']} ({highest['score']})")
+        print(f"Max Stock Item: {highest['item_name']} ({highest['quantity']} units)")
     if lowest:
-        print(f"Lowest Scorer: {lowest['name']} ({lowest['score']})")
+        print(f"Min Stock Item: {lowest['item_name']} ({lowest['quantity']} units)")
 
 if __name__ == "__main__":
     main()

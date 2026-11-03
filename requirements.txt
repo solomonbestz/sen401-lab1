@@ -1,2 +1,5 @@
 # Baseline v1.0 Dependencies
 # Python standard library 3.12 used
+
+# Lab 2 Dependencies
+pydantic>=2.0.0
